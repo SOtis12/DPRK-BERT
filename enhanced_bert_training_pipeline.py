@@ -138,7 +138,7 @@ class EnhancedBERTTrainer:
             # Check current status
             result = subprocess.run([
                 'gcloud', 'alpha', 'compute', 'tpus', 'tpu-vm', 'list',
-                '--zone', self.tpu_zone, '--filter', f'name={self.tpu_name}'
+                '--zone', self.tpu_zone, '--filter', f'name:{self.tpu_name}'
             ], capture_output=True, text=True, timeout=60)
             
             if 'READY' in result.stdout:
