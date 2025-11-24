@@ -43,8 +43,8 @@ class EnhancedBERTTrainer:
         self.base_path = Path(base_path)
         self.enhanced_data_path = self.base_path / "enhanced_training_data"
         self.original_data_path = self.base_path / "dprk-bert-data/enhanced"
-        self.tpu_zone = "us-central1-a"
-        self.tpu_name = "dprk-bert-v3"
+        self.tpu_zone = os.environ.get("TPU_ZONE", "us-central1-a")
+        self.tpu_name = os.environ.get("TPU_NAME", "dprk-bert-v5p")
         self.bucket_name = "balloonpredictor-dprk-bert-data"
         
     def prepare_training_data(self):
