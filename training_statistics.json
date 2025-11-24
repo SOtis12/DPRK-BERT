@@ -1,0 +1,51 @@
+{
+  "original_enhanced_items": 0,
+  "comprehensive_new_items": 3472783,
+  "total_training_items": 3472783,
+  "parallel_translation_pairs": 669,
+  "data_distribution": {
+    "by_source": {
+      "kim_speech_2016": 121,
+      "kim_speech_2017": 119,
+      "kim_speech_2015": 124,
+      "kim_speech_2014": 122,
+      "kim_speech_2013": 107,
+      "kim_speech_2019": 140,
+      "kim_speech_2018": 127,
+      "parallel_boost_dprk_bert_parallel_boost": 762,
+      "parallel_boost_dprk_bert_parallel_seed": 200,
+      "pdf_조선민주주의인민공화국-정보화법": 49,
+      "pdf_Pyongyang-Cultural-Language-Protection-Act_English-and-Korean-Versions_Daily-NK": 37,
+      "pdf_조선민주주의인민공화국-미성년범죄방지법": 22,
+      "pdf_241111_우주개발법2022_08": 53,
+      "pdf_경제무역참사부와-경제협조단-경제실무대표단의-대외경제사업규정": 55,
+      "pdf_Social-Security-Control-Act-in-North-Korea_dailynk": 67,
+      "pdf_조선민주주의인민공화국-자위경비법": 79,
+      "pdf_241107_조선민주주의인민공화국-수매법": 49,
+      "pdf_241107_공화국-군중신고법_수정": 73,
+      "century_Segi_v4_c10": 998,
+      "century_Segi_v4_c11": 999,
+      "century_Segi_v5": 1000,
+      "century_Segi_v7": 999,
+      "century_Segi_v4_c12": 997,
+      "century_Segi_v6": 1000,
+      "century_Segi_v2": 874,
+      "century_Segi_v3": 999,
+      "century_Segi_v1": 889,
+      "century_Segi_v8": 999,
+      "dictionary_biak - dictionary_table": 1604491,
+      "dictionary_dictionary_table Korean-to-Korean": 233621,
+      "dictionary_dictionary_table_English-To-Korean": 1604489,
+      "gyeoremal_meaning": 375,
+      "gyeoremal_explanation": 198,
+      "gyeoremal_example": 120,
+      "gyeoremal_notation": 17429
+    },
+    "by_dialect": {
+      "north_korean": 3454368,
+      "south_korean": 668,
+      "comparative": 17627,
+      "mixed": 120
+    }
+  }
+}

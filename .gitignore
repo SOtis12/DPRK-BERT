@@ -1,3 +1,57 @@
-kr-bert-pretrained
-data
-__pycache__
+# OS cruft / editors
+.DS_Store
+*.swp
+*.swo
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environments and tooling
+venv*/
+env/
+.venv/
+
+# Logs and checkpoints
+*.log
+*.tmp
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+runs/
+
+# Large datasets and generated corpora (kept in GCS instead)
+final_bert_training_dataset.json
+final_parallel_pairs.json
+enhanced_training/
+enhanced_training_data/
+enhanced_training_gcs/
+data/
+data_processing_checkpoints/
+experiment_outputs/
+local_training_data/
+robust_scraped_output/
+rodong_fresh_data/
+test_output/
+tpu_outputs/
+dprk_bert_enhanced_output/
+dprk_bert_local_output/
+dprk_bert_test_output/
+dprk-bert-data/
+
+# Archived upstream copies to avoid double-tracking
+DPRK-BERT-Public/
+DPRK-BERT-master/
+
+# External resources / downloads
+kr-bert-pretrained/
+Resources/
+deploy/
+
+# Credentials and misc notes
+*.bak
+*.old

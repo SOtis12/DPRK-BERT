@@ -1,0 +1,71 @@
+There is a project that attempts to act as a translator from north/south korean dialects.
+
+Please see 2112.00567v1.pdf for more information explaining the project, if needed. 
+
+The code was downloaded/cloned from https://github.com/ardakdemir/DPRK-BERT
+The original version of the code is in the folder "DPRK-BERT-master" in ~/Downloads
+
+The goal is to fork this project and improve the quality of the translation service by training the BERT model on more data. DPRK-BERT is currently already trained on Rodong Sinmun articles. The Rodong Sinmun-trained dataset and the trained DPRK-BERT model can be found here: https://drive.google.com/drive/folders/1VGDc8NtaYVrsxDe1f1JV8gbw1juvyIlA?usp=sharing 
+
+
+
+
+I would like to expand that in my fork of the project. I don't want to take away any of the existing training weights and parameters - I just want to make this project be trained on more data so that it can produce superior translation results. 
+
+To accomplish this, I have gathered resources that are written in the North Korean dialect. 
+
+- The folder "Kim's New Year's Speeches" containts .txt files containing Korean text in the DPRK dialect. 
+
+- The "PDFs" folder partially contains rules and regulatiwons, and other korean text written in the North Korean dialect. Some PDFs may have English translations. 
+
+- The folder "With the Century" contains PDFs that contain North Korean dialect text. 
+
+- Parallel Boost is a folder that contains North Korean/South Korean sentances in CSV format.
+
+- The "Dictionaries" folder contains dictionary data that was extracted from a North Korean cell Phone. 
+
+- The "Custom Code" folder contains code that is intended to scrape north korean text from current north korean sites and those that are now defunct but still archived on the Wayback Machine. The existing codebase contains scraper and parser code, but the code in the "Custom Code" folder may be used as an alternative.
+
+
+- The "gyeoremal" folder contains CSV files that explain differences in notation and meaning in North/South dialects, along with example sentances. Use this as efficiently as possible to try to improve the BERT model. 
+
+
+Can you use all of these resources to add to the data that the BERT model is trained on please?
+
+Parse and clean up data from these resources, making additonal good new data to further refine the BERT model.
+Verify and intensively sanity check the new data to confirm this is truly good data for refining the BERT model. I don't want data that was parsed incorrectly parsed to be in the training weights, and thus produce bad translation results. For example, PDFs may have page numbers - I don't want this to interfere with anything.
+Perhaps sanity check stuff in different ways, adding redundancy
+
+
+Try to use data as efficiently as possible. For example, if a sentance is provided in the North Korean dialect and the same sentance is written in the South Korean dialect, these "example translations" could give a lot more help than random sentnances in both the North and South Korean dialects that do not match eachother. Try to analyze how to use each type of data as efficiently as possible to produce the best results for the enhanced BERT model.
+
+
+
+I have a TPU v5p running in Google Cloud. This can be used to train and improve the trained DPRK-BERT model. 
+
+
+When the TPU doesn't need to be used, run 
+
+gcloud alpha compute tpus tpu-vm list --zone=us-central1-a 
+
+to make sure it is stopped
+
+
+The end results of this should be enhanced BERT training weights that will produce a "More accurate" "translation" 
+between North and South dialects. 
+
+If possible, try to scrape current North Korean sites for more data to train the BERT model. Try scraping North Korean sites from the Wayback machine if real north korean sites dont work. Do this using the cloud server. 
+If this doesnt work dispite multiple attempts, just try to improve the BERT model soley using the stuff in the Resorces folder.
+
+The TPU VM name is dprk-bert-v5p. 
+The GCS bucket name is balloonpredictor-dprk-bert-data.
+The instance name is dprk-bert-data-11131716
+
+Turn the VM on using terminal commands such as gcloud. 
+
+Give me the file for the updated training data. 
+
+Some training has already been done locally, independent of Google Cloud. Extensively sanity check this. If it is good quality, perhaps this can be uploaded to the google cloud server
+and used as a starting point to further train the BERT model. 
+
+ 

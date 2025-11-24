@@ -1,15 +1,55 @@
-datasets==1.13.2
-huggingface-hub==0.0.19
-numpy==1.19.5
-pandas==0.25.1
-regex==2021.9.24
-requests==2.25.1
-scikit-learn==0.22.2.post1
-soylemma==0.2.0
-tokenizers==0.9.4
-toolz==0.10.0
-torch==1.7.1
-torchvision==0.8.2
-tqdm==4.62.3
-transformers==4.2.2
-tweepy==3.1.0
+# Enhanced DPRK-BERT Dependencies
+# Core dependencies for enhanced DPRK-BERT training with multi-source data processing and TPU support
+
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+accelerate>=0.20.0
+tokenizers>=0.13.0
+evaluate>=0.4.0
+
+# Korean NLP
+konlpy>=0.6.0
+hanja>=0.15.0
+
+# PDF processing
+PyPDF2>=3.0.0
+PyMuPDF>=1.22.0
+
+# TPU support (install separately on TPU VMs)
+# torch-xla[tpu]>=2.0.0 --index-url https://download.pytorch.org/whl/test/cpu
+
+# Data processing
+pandas>=1.5.0
+numpy>=1.21.0
+tqdm>=4.64.0
+scikit-learn>=1.1.0
+
+# Web scraping (for Custom Code integration)
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+scrapy>=2.6.0
+
+# Utilities
+matplotlib>=3.6.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Development and debugging
+jupyter>=1.0.0
+ipython>=8.0.0
+notebook>=6.4.0
+
+# Google Cloud (for TPU and storage)
+google-cloud-storage>=2.7.0
+google-cloud-tpu>=1.17.0
+
+# Configuration and logging
+pyyaml>=6.0
+python-dotenv>=0.20.0
+wandb>=0.13.0  # Optional: for experiment tracking
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
